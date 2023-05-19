@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Password Protected Page</title>
+<script>
+function checkPassword() {
+  var password = document.getElementById("password").value;
+  if (password === "snail") {
+    window.location = "nextpage.html";
+  } else {
+    alert("Invalid password.");
+  }
+}
+</script>
+</head>
+<body>
+<h1>Password Protected Page</h1>
+<p>Please enter the password to access this page.</p>
+<input type="text" name="password" id="password" />
+<input type="submit" value="Submit" onclick="checkPassword()" />
+</body>
+</html>

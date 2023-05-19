@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puzzle</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+
+    <h1 class="header">Chapter 1</h1>
+
+    <p class="toDo">Enter the code</p>
+
+    <div class="passwordBox">
+        <input type="text" name="password" id="password">
+        <br>
+        <input type="submit" value="Submit" id="submitButton" class="submitButton" onclick="checkPassword()"/>
+    </div>
+
+    <div class="hintPreview">
+        <p>hints if you are a noob</p>
+        <button class="hintButton" onclick="showHint()">hint</button>
+    </div>
+
+    <div class="hintContainer" id="hint">
+        <p>decrypt using the key paper</p>
+    </div>
+
+    <script src="logic.js"></script>
+
+</body>
+
+</html>
